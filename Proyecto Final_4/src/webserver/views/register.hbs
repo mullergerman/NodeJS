@@ -1,0 +1,92 @@
+<div class="container">
+  <br>
+	<div class="row align-items-center border border-success rounded mt-3">    
+		<div class="col-12">
+			<h2 style="text-align: left;">Registrar un nuevo usuario</h2>
+			<br>
+			<form action = "/register" method = "post" class="mt-2" enctype="multipart/form-data" id="form">
+				<div class="row">
+					<div class="col-8">
+						<div class="form-group">
+							<label for="nombre">Email</label>
+							<input type="text" class="form-control mt-2" id="username" name="username" placeholder="" required>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="password">Insertar Contraseña</label>
+							<div class="input-group">
+								<input type="password" class="form-control mt-2" id="password" name="password" placeholder="minimo 8 caracteres" required>
+								<img id="img_ok" src="" class="mt-2" style="height:40px;">
+							</div>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="password2">Validar Contraseña</label>
+							<div class="input-group">
+								<input type="password" class="form-control mt-2" id="password2" name="password2" placeholder="minimo 8 caracteres" required >
+								<img id="img_error" src="" class="mt-2" style="height:40px;">
+							</div>
+						</div>
+					</div>
+					<div class="col-4 text-center">
+						<div class="image">
+							<img id="picprofile" src="img/pic_default.png" style="width: 200px; border:1px;">
+						</div>
+						<br>
+						<input type="file" id="selectedFile" style="display: none;" name="image" onchange="readURL(this);"/>
+						<input type="button" class="btn btn-primary" value="Subir Imagen" onclick="document.getElementById('selectedFile').click();" />
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col">
+						<div class="form-group">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control mt-2" id="nombre" name="nombre" placeholder="" required >
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<label for="apellido">Apellido</label>
+							<input type="text" class="form-control mt-2" id="apellido" name="apellido" placeholder="" required >
+						</div>
+					</div>		
+					<div class="col">
+						<div class="form-group">
+							<label for="edad">Edad</label>
+							<input type="number" class="form-control mt-2" id="edad" name="edad" placeholder="" required >
+						</div>
+					</div>			
+				</div>
+				<br>
+				<div class="row">
+					<div class="col">
+						<div class="form-group">
+							<label for="direccion">Direccion</label>
+							<input type="text" class="form-control mt-2" id="direccion" name="direccion" placeholder="" required >
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<label for="pais">Codigo de Pais</label>
+							<input type="number" class="form-control mt-2" id="telefono" name="telefono" placeholder="+54" required >
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<label for="telefono">Numero de telefono</label>
+							<input type="number" class="form-control mt-2" id="telefono" name="telefono" placeholder="(sin incluir codigo de pais)" required >
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<button type="submit" id="btnRegister" class="btn btn-success mt-3" style="width: 100%;">Register</button>          
+			</form>
+			<br>
+			<a href="/login">¿Ya posee una cuenta? Ingrese aqui para iniciar sesión.</a>
+		</div>
+		<span class="mt-2"></span>
+	</div>
+</div>
+

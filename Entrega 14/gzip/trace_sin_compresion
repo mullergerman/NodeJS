@@ -1,0 +1,164 @@
+GET /info HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 2750
+ETag: W/"abe-mkXCmG7rKT7VN3vhX6UU4QLNRJA"
+Set-Cookie: connect.sid=s%3AZQk5UOI74yP9GbKRMQmxzonU3OWGCayr.pB0eududSAHtEMAu23JX17WirIUrEVhxYSSISn%2B2jws; Path=/; Expires=Fri, 14 Jan 2022 00:54:39 GMT; HttpOnly
+Date: Fri, 14 Jan 2022 00:53:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Handlebars lado Cliente -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Style Spinner -->
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Entrega 13 - Informacion</title>
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+
+    <div class="container">
+  <br>
+
+  <div class="row align-items-center border border-success rounded">
+    <div class="col-12">
+        <h2 style="text-align: center;">Informacion del Sistema</h2>
+
+        <table class="table mt-5">
+            <tr>
+                <th>Parametro</th>
+                <th>Valor</th>
+            </tr>
+            <tr class="align-middle">
+                <td>Argumentos</td>
+                <td>-p,8080,-m,fork</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Plataforma</td>
+                <td>linux</td>
+            </tr>
+            <tr class="align-middle">
+                <td>NodeJS Version</td>
+                <td>v16.13.2</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Memoria</td>
+                <td>98119680</td>
+            </tr>  
+            <tr class="align-middle">
+                <td>Path Ejecucion</td>
+                <td>/usr/bin/node</td>
+            </tr>  
+            <tr class="align-middle">
+                <td>Process ID</td>
+                <td>11088</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Working Directory</td>
+                <td>/home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Cantidad CPUs</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+    </div>
+    <span class="mt-2"></span>
+  </div>
+
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>GET /style.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://localhost:8080/info
+Cookie: connect.sid=s%3AZQk5UOI74yP9GbKRMQmxzonU3OWGCayr.pB0eududSAHtEMAu23JX17WirIUrEVhxYSSISn%2B2jws
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Sat, 23 Oct 2021 01:35:39 GMT
+ETag: W/"1e4-17caaca0611"
+Content-Type: text/css; charset=UTF-8
+Content-Length: 484
+Date: Fri, 14 Jan 2022 00:53:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+.lds-dual-ring {
+    display:inline-flex;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #cef;
+    border-color: #cef transparent #cef transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }GET /android-icon-192x192.png HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://localhost:8080/info
+Cookie: connect.sid=s%3AZQk5UOI74yP9GbKRMQmxzonU3OWGCayr.pB0eududSAHtEMAu23JX17WirIUrEVhxYSSISn%2B2jws
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+

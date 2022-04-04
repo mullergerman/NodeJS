@@ -1,0 +1,56 @@
+  <div class="container">
+  <br>
+
+  <div class="row align-items-center border border-success bg-success rounded">
+    <div class="col-12">
+      <div class="mt-3"></div>
+      <h3 style="text-align: center; color:white"><strong>Ayuda al cliente</strong></h5>
+      <div class="mb-3"></div>
+    </div>
+  </div>
+  <br>
+
+  <div class="row align-items-center border border-success rounded">
+    <div class="col-12">
+      <div class="row">
+            
+        <h2 style="text-align: center;">Centro de Mensajes</h2>
+        
+        <div class="card mt-5">
+            <div class="card-header">
+            Mensajes Intercambiados
+            <div id="compresion"></div>
+            </div>
+            <div class="card-body text-center align-middle">
+            <div class="lds-dual-ring" id="spinner"></div>
+            <div style="text-align:left" id="chat"></div>
+            </div>
+        </div>
+
+        <form onsubmit="return sendMessage(this)" class="mt-2">
+
+          {{#if isAdmin}}
+            <div class="form-group row mt-1">
+              <label for="nombre" class="col-md-1 col-form-label">To Username:</label>
+                <div class="col-md-11">
+                  <input type="text" class="form-control" id="email"  required>
+              </div>
+            </div>
+          {{/if}}
+          <div class="form-group row mt-1">
+              <label for="nombre" class="col-md-1 col-form-label">Mensaje:</label>
+              <div class="col-md-11">
+              <input type="text" class="form-control" id="msg" placeholder="Ingresa un mensaje..." required>
+              </div>            
+          </div>
+
+          <button type="submit" class="btn btn-success mt-5 mb-2" style="width: 100%;" id="chat-btn">Enviar</button>
+
+        </form>
+
+      </div>
+    </div>
+     <span class="mt-2"></span>
+  </div>
+  <br>
+ 

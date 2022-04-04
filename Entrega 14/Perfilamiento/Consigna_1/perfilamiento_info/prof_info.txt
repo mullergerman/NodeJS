@@ -1,0 +1,1158 @@
+Statistical profiling result from isolate-0x61b90c0-12093-v8.log, (8036 ticks, 11 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   6404   79.7%          /usr/bin/node
+    138    1.7%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+      9    0.1%          [vdso]
+      8    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     51    0.6%    3.5%  LazyCompile: *resolve node:path:1091:10
+     40    0.5%    2.7%  LazyCompile: *wrap /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     34    0.4%    2.3%  LazyCompile: *parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     19    0.2%    1.3%  LazyCompile: *SourceNode_walk /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:221:53
+     17    0.2%    1.2%  LazyCompile: *serializeInto /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:550:23
+     17    0.2%    1.2%  LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     12    0.1%    0.8%  LazyCompile: *compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     10    0.1%    0.7%  LazyCompile: *extend /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      9    0.1%    0.6%  LazyCompile: *anonymous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      8    0.1%    0.5%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      8    0.1%    0.5%  RegExp: (?:\r\n?|\n).*
+      8    0.1%    0.5%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      8    0.1%    0.5%  LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:174:29
+      7    0.1%    0.5%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      5    0.1%    0.3%  LazyCompile: *normalizeString node:path:66:25
+      5    0.1%    0.3%  LazyCompile: *anonymous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      5    0.1%    0.3%  LazyCompile: *SourceNode_add /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:172:51
+      4    0.0%    0.3%  RegExp: (^|\r?\n)\s*?$
+      4    0.0%    0.3%  LazyCompile: *resolvePath /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      4    0.0%    0.3%  LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      4    0.0%    0.3%  LazyCompile: *emit node:events:340:44
+      4    0.0%    0.3%  Function: ^readFile node:fs:373:18
+      4    0.0%    0.3%  Function: ^deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      3    0.0%    0.2%  LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      3    0.0%    0.2%  LazyCompile: *join node:path:1166:7
+      3    0.0%    0.2%  LazyCompile: *dirname node:path:1275:10
+      3    0.0%    0.2%  LazyCompile: *deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      3    0.0%    0.2%  Function: ^command /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/server.js:133:12
+      3    0.0%    0.2%  Function: ^_copy node:buffer:200:15
+      2    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\{)
+      2    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      2    0.0%    0.1%  RegExp: ^(?:\{\{(~)?!--)
+      2    0.0%    0.1%  RegExp: ^(?:\))
+      2    0.0%    0.1%  RegExp: \r?\n\s*?$
+      2    0.0%    0.1%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      2    0.0%    0.1%  LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      2    0.0%    0.1%  LazyCompile: *validateString node:internal/validators:117:24
+      2    0.0%    0.1%  LazyCompile: *size /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/denque/index.js:94:38
+      2    0.0%    0.1%  LazyCompile: *resolvePossibleLambda /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:527:56
+      2    0.0%    0.1%  LazyCompile: *render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2    0.0%    0.1%  LazyCompile: *relative node:path:1190:11
+      2    0.0%    0.1%  LazyCompile: *push /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      2    0.0%    0.1%  LazyCompile: *opcode /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      2    0.0%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      2    0.0%    0.1%  LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:1891:35
+      2    0.0%    0.1%  LazyCompile: *SendStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:96:21
+      2    0.0%    0.1%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      2    0.0%    0.1%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.1%  LazyCompile: *<anonymous> node:vm:313:27
+      2    0.0%    0.1%  LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      2    0.0%    0.1%  Function: ^render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2    0.0%    0.1%  Function: ^readFileSync node:fs:450:22
+      2    0.0%    0.1%  Function: ^processIncomingData /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      2    0.0%    0.1%  Function: ^maybePromise /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:482:22
+      2    0.0%    0.1%  Function: ^isUint8Array node:internal/util/types:13:22
+      2    0.0%    0.1%  Function: ^debug /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/node_modules/debug/src/common.js:66:17
+      2    0.0%    0.1%  Function: ^createProtoAccessControl /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/internal/proto-access.js:19:34
+      2    0.0%    0.1%  Function: ^createError /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/http-errors/index.js:48:22
+      2    0.0%    0.1%  Function: ^compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:490:17
+      2    0.0%    0.1%  Function: ^checkIsHttpToken node:_http_common:221:26
+      2    0.0%    0.1%  Function: ^_flushOutput node:_http_outgoing:950:63
+      2    0.0%    0.1%  Function: ^Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      2    0.0%    0.1%  Function: ^Glob._process /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/glob/glob.js:295:36
+      2    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/execute_operation.js:148:61
+      1    0.0%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.0%    0.1%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.1%  RegExp: ^(?:undefined(?=([~}\s)])))
+      1    0.0%    0.1%  RegExp: ^(?:\}\}\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\}(~)?\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\/)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?>)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?&)
+      1    0.0%    0.1%  RegExp: ^(?:\.\.)
+      1    0.0%    0.1%  RegExp: ^(?:[^\x00]+)
+      1    0.0%    0.1%  RegExp: ^(?:@)
+      1    0.0%    0.1%  RegExp: ^(?:'(\\[']|[^'])*')
+      1    0.0%    0.1%  RegExp: ^(?:"(\\["]|[^"])*")
+      1    0.0%    0.1%  RegExp: \=+$
+      1    0.0%    0.1%  RegExp: [&<>"'`=]
+      1    0.0%    0.1%  RegExp: SSS
+      1    0.0%    0.1%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    0.1%  LazyCompile: *yy.locInfo /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:42:25
+      1    0.0%    0.1%  LazyCompile: *write node:buffer:1050:40
+      1    0.0%    0.1%  LazyCompile: *template /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      1    0.0%    0.1%  LazyCompile: *syncExports node:internal/bootstrap/loaders:287:14
+      1    0.0%    0.1%  LazyCompile: *serializeDate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:108:23
+      1    0.0%    0.1%  LazyCompile: *serializeBinary /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:459:25
+      1    0.0%    0.1%  LazyCompile: *resolveBSONOptions /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/bson.js:52:28
+      1    0.0%    0.1%  LazyCompile: *renderView /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1    0.0%    0.1%  LazyCompile: *realpathSync node:fs:2408:22
+      1    0.0%    0.1%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1    0.0%    0.1%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      1    0.0%    0.1%  LazyCompile: *quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1    0.0%    0.1%  LazyCompile: *pushContext /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:437:36
+      1    0.0%    0.1%  LazyCompile: *processWaitQueue /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1    0.0%    0.1%  LazyCompile: *processIncomingData /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    0.0%    0.1%  LazyCompile: *preparePath /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      1    0.0%    0.1%  LazyCompile: *popStack /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      1    0.0%    0.1%  LazyCompile: *popAsyncContext node:internal/async_hooks:543:25
+      1    0.0%    0.1%  LazyCompile: *passLookupPropertyOption /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:366:34
+      1    0.0%    0.1%  LazyCompile: *moveHelperToHooks /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/helpers.js:48:27
+      1    0.0%    0.1%  LazyCompile: *maybePromise /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:482:22
+      1    0.0%    0.1%  LazyCompile: *lookupProperty /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:118:44
+      1    0.0%    0.1%  LazyCompile: *lookupOnContext /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      1    0.0%    0.1%  LazyCompile: *isInline /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:956:30
+      1    0.0%    0.1%  LazyCompile: *hasAspect /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/operation.js:39:14
+      1    0.0%    0.1%  LazyCompile: *getPartials /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:52:20
+      1    0.0%    0.1%  LazyCompile: *digest node:internal/crypto/hash:115:40
+      1    0.0%    0.1%  LazyCompile: *command /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1    0.0%    0.1%  LazyCompile: *castChunk /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      1    0.0%    0.1%  LazyCompile: *addListener node:events:486:58
+      1    0.0%    0.1%  LazyCompile: *_write node:internal/streams/writable:283:16
+      1    0.0%    0.1%  LazyCompile: *_unrefTimer node:net:417:52
+      1    0.0%    0.1%  LazyCompile: *_getFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      1    0.0%    0.1%  LazyCompile: *SourceNode_prepend /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:197:59
+      1    0.0%    0.1%  LazyCompile: *SourceNode /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:35:20
+      1    0.0%    0.1%  LazyCompile: *PathExpression /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1    0.0%    0.1%  LazyCompile: *MustacheStatement /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:215:48
+      1    0.0%    0.1%  LazyCompile: *Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.1%  LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    0.0%    0.1%  LazyCompile: *Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.1%  LazyCompile: *FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.1%  LazyCompile: *ClientSession /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sessions.js:54:16
+      1    0.0%    0.1%  LazyCompile: *<anonymous> node:internal/fs/utils:686:40
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/execute_operation.js:148:61
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:360:47
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:274:31
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:85:24
+      1    0.0%    0.1%  Function: ^writevGeneric node:internal/stream_base_commons:126:23
+      1    0.0%    0.1%  Function: ^writeend /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:260:24
+      1    0.0%    0.1%  Function: ^writeUInt32LE node:internal/buffer:704:23
+      1    0.0%    0.1%  Function: ^writeHead node:_http_server:269:19
+      1    0.0%    0.1%  Function: ^writeHead /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/on-headers/index.js:28:29
+      1    0.0%    0.1%  Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1    0.0%    0.1%  Function: ^wrapHelper /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:6:20
+      1    0.0%    0.1%  Function: ^value node:internal/console/constructor:321:20
+      1    0.0%    0.1%  Function: ^transformLiteralToPath /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:551:32
+      1    0.0%    0.1%  Function: ^toPathIfFileURL node:internal/url:1496:25
+      1    0.0%    0.1%  Function: ^template /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      1    0.0%    0.1%  Function: ^supportsOpMsg /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:413:23
+      1    0.0%    0.1%  Function: ^stripFlags /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:52:20
+      1    0.0%    0.1%  Function: ^stringToFlags node:internal/fs/utils:555:23
+      1    0.0%    0.1%  Function: ^statSync node:fs:1528:18
+      1    0.0%    0.1%  Function: ^session /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:179:26
+      1    0.0%    0.1%  Function: ^serializeNumber /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:43:25
+      1    0.0%    0.1%  Function: ^serializeInto /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:550:23
+      1    0.0%    0.1%  Function: ^serializeBson /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1    0.0%    0.1%  Function: ^serialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/bson.js:111:19
+      1    0.0%    0.1%  Function: ^sendFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:716:51
+      1    0.0%    0.1%  Function: ^save /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:403:20
+      1    0.0%    0.1%  Function: ^ret._setup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:217:25
+      1    0.0%    0.1%  Function: ^restore /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:620:17
+      1    0.0%    0.1%  Function: ^resolveOptions /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:824:24
+      1    0.0%    0.1%  Function: ^resolve node:path:1091:10
+      1    0.0%    0.1%  Function: ^resetQueue /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:364:21
+      1    0.0%    0.1%  Function: ^resOnFinish node:_http_server:788:21
+      1    0.0%    0.1%  Function: ^replaceStack /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      1    0.0%    0.1%  Function: ^realpathSync node:fs:2408:22
+      1    0.0%    0.1%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.1%  Function: ^read /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:953:9
+      1    0.0%    0.1%  Function: ^processWaitQueue /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1    0.0%    0.1%  Function: ^processPromiseRejections node:internal/process/promises:203:34
+      1    0.0%    0.1%  Function: ^prepareProgram /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:185:24
+      1    0.0%    0.1%  Function: ^preparePath /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      1    0.0%    0.1%  Function: ^popStack /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      1    0.0%    0.1%  Function: ^parserOnIncoming node:_http_server:852:26
+      1    0.0%    0.1%  Function: ^parseFileMode node:internal/validators:58:23
+      1    0.0%    0.1%  Function: ^parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.1%  Function: ^parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    0.0%    0.1%  Function: ^openSync node:fs:576:18
+      1    0.0%    0.1%  Function: ^opcode /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      1    0.0%    0.1%  Function: ^ondata node:internal/streams/readable:752:18
+      1    0.0%    0.1%  Function: ^onStreamRead node:internal/stream_base_commons:171:22
+      1    0.0%    0.1%  Function: ^nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.1%  Function: ^next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:732:17
+      1    0.0%    0.1%  Function: ^next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      1    0.0%    0.1%  Function: ^merge /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:83:24
+      1    0.0%    0.1%  Function: ^maybeReadMore_ node:internal/streams/readable:609:24
+      1    0.0%    0.1%  Function: ^matchHeader node:_http_outgoing:524:21
+      1    0.0%    0.1%  Function: ^makeRequireFunction node:internal/modules/cjs/helpers:58:29
+      1    0.0%    0.1%  Function: ^makeFindCommand /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/find.js:73:25
+      1    0.0%    0.1%  Function: ^make /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/minimatch/minimatch.js:142:15
+      1    0.0%    0.1%  Function: ^lookupProperty /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:118:44
+      1    0.0%    0.1%  Function: ^lookup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mime/mime.js:102:19
+      1    0.0%    0.1%  Function: ^latencyWindowReducer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/server_selection.js:158:30
+      1    0.0%    0.1%  Function: ^jsonParser /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/body-parser/lib/types/json.js:98:30
+      1    0.0%    0.1%  Function: ^join node:path:1166:7
+      1    0.0%    0.1%  Function: ^isInline /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:956:30
+      1    0.0%    0.1%  Function: ^isFileType node:fs:205:20
+      1    0.0%    0.1%  Function: ^isBuffer node:buffer:509:36
+      1    0.0%    0.1%  Function: ^invokeAmbiguous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1    0.0%    0.1%  Function: ^internalNameLookup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:66:50
+      1    0.0%    0.1%  Function: ^initAsyncResource node:internal/timers:157:27
+      1    0.0%    0.1%  Function: ^hasSessionSupport /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:350:22
+      1    0.0%    0.1%  Function: ^handleOperationResult /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/server.js:322:42
+      1    0.0%    0.1%  Function: ^handle /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.1%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.1%  Function: ^getPartials /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:52:20
+      1    0.0%    0.1%  Function: ^getHeader node:_http_outgoing:590:57
+      1    0.0%    0.1%  Function: ^getCLIOptionsFromBinding node:internal/options:18:34
+      1    0.0%    0.1%  Function: ^get node:internal/streams/readable:1166:8
+      1    0.0%    0.1%  Function: ^get node:internal/bootstrap/pre_execution:326:8
+      1    0.0%    0.1%  Function: ^get node:internal/bootstrap/pre_execution:314:8
+      1    0.0%    0.1%  Function: ^get ismaster /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:71:17
+      1    0.0%    0.1%  Function: ^get expires /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/session/cookie.js:72:14
+      1    0.0%    0.1%  Function: ^get /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/node_modules/debug/src/common.js:125:9
+      1    0.0%    0.1%  Function: ^generateList /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      1    0.0%    0.1%  Function: ^fromString node:buffer:431:20
+      1    0.0%    0.1%  Function: ^fromOptions /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/write_concern.js:40:23
+      1    0.0%    0.1%  Function: ^fresh /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/parseurl/index.js:153:16
+      1    0.0%    0.1%  Function: ^formatWithOptionsInternal node:internal/util/inspect:1891:35
+      1    0.0%    0.1%  Function: ^end node:_http_outgoing:833:45
+      1    0.0%    0.1%  Function: ^emitAfterScript node:internal/async_hooks:507:25
+      1    0.0%    0.1%  Function: ^deserialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:36:21
+      1    0.0%    0.1%  Function: ^createNewLookupObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      1    0.0%    0.1%  Function: ^containsDotFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:933:26
+      1    0.0%    0.1%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    0.1%  Function: ^compileChildren /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1    0.0%    0.1%  Function: ^command /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1    0.0%    0.1%  Function: ^colorizeStart /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/layouts.js:25:23
+      1    0.0%    0.1%  Function: ^closeSync /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:72:24
+      1    0.0%    0.1%  Function: ^clearIncoming node:_http_server:749:23
+      1    0.0%    0.1%  Function: ^castChunk /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      1    0.0%    0.1%  Function: ^callback node:internal/streams/writable:550:44
+      1    0.0%    0.1%  Function: ^assertUninitialized /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:560:29
+      1    0.0%    0.1%  Function: ^assertEncoding node:internal/fs/utils:151:24
+      1    0.0%    0.1%  Function: ^applySession /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sessions.js:643:22
+      1    0.0%    0.1%  Function: ^anonymous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      1    0.0%    0.1%  Function: ^allocUnsafe node:buffer:372:42
+      1    0.0%    0.1%  Function: ^addChunk node:internal/streams/readable:304:18
+      1    0.0%    0.1%  Function: ^addCatch node:events:215:18
+      1    0.0%    0.1%  Function: ^accept /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1    0.0%    0.1%  Function: ^_getDir /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:266:16
+      1    0.0%    0.1%  Function: ^_compileTemplate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:252:19
+      1    0.0%    0.1%  Function: ^_addHeaderLine node:_http_incoming:337:24
+      1    0.0%    0.1%  Function: ^Writable.write node:internal/streams/writable:333:36
+      1    0.0%    0.1%  Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    0.0%    0.1%  Function: ^View /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/view.js:52:14
+      1    0.0%    0.1%  Function: ^UpdateOperation /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/update.js:10:16
+      1    0.0%    0.1%  Function: ^Timeout node:internal/timers:167:17
+      1    0.0%    0.1%  Function: ^SourceNode_prepend /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:197:59
+      1    0.0%    0.1%  Function: ^ServerResponse node:_http_server:178:24
+      1    0.0%    0.1%  Function: ^Readable.removeListener node:internal/streams/readable:905:45
+      1    0.0%    0.1%  Function: ^Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.1%  Function: ^Program /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      1    0.0%    0.1%  Function: ^Msg /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:468:16
+      1    0.0%    0.1%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.1%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.1%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.1%  Function: ^Long.toNumber /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:733:40
+      1    0.0%    0.1%  Function: ^Long.isNegative /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:492:42
+      1    0.0%    0.1%  Function: ^Long /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:58:18
+      1    0.0%    0.1%  Function: ^Logger.<computed> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/logger.js:123:43
+      1    0.0%    0.1%  Function: ^FindCursor /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/find_cursor.js:29:16
+      1    0.0%    0.1%  Function: ^EventEmitter.init node:events:194:29
+      1    0.0%    0.1%  Function: ^ConnectionCheckOutStartedEvent /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool_events.js:90:16
+      1    0.0%    0.1%  Function: ^ClientSession /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sessions.js:54:16
+      1    0.0%    0.1%  Function: ^<anonymous> node:path:1082:10
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:72:3
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:190:40
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:167:39
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/fs/utils:668:38
+      1    0.0%    0.1%  Function: ^<anonymous> node:buffer:348:36
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:558:26
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/server_selection.js:192:12
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/server.js:41:35
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/find_cursor.js:54:81
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:445:46
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:118:50
+      1    0.0%    0.1%  Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:203:10
+
+ [C++]:
+   ticks  total  nonlib   name
+    380    4.7%   25.7%  epoll_pwait@@GLIBC_2.6
+    133    1.7%    9.0%  __write@@GLIBC_2.2.5
+     57    0.7%    3.9%  fwrite@@GLIBC_2.2.5
+     54    0.7%    3.7%  __lll_lock_wait
+     40    0.5%    2.7%  __libc_write
+     33    0.4%    2.2%  __libc_read
+     25    0.3%    1.7%  syscall@@GLIBC_2.2.5
+     21    0.3%    1.4%  __pthread_cond_wait
+     17    0.2%    1.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     14    0.2%    0.9%  __mprotect@@GLIBC_PRIVATE
+     13    0.2%    0.9%  __libc_malloc@@GLIBC_2.2.5
+     11    0.1%    0.7%  _IO_file_xsputn@@GLIBC_2.2.5
+     10    0.1%    0.7%  cfree@GLIBC_2.2.5
+      9    0.1%    0.6%  __pthread_mutex_unlock_usercnt
+      6    0.1%    0.4%  std::ostream::sentry::~sentry()@@GLIBCXX_3.4
+      5    0.1%    0.3%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      5    0.1%    0.3%  operator delete(void*)@@GLIBCXX_3.4
+      5    0.1%    0.3%  __GI___pthread_mutex_lock
+      4    0.0%    0.3%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      3    0.0%    0.2%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      3    0.0%    0.2%  operator new(unsigned long)@@GLIBCXX_3.4
+      3    0.0%    0.2%  accept4@@GLIBC_2.10
+      3    0.0%    0.2%  __munmap@@GLIBC_PRIVATE
+      2    0.0%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.0%    0.1%  operator new[](unsigned long)@@GLIBCXX_3.4
+      2    0.0%    0.1%  fflush@@GLIBC_2.2.5
+      2    0.0%    0.1%  __pthread_cond_signal
+      2    0.0%    0.1%  __mmap@@GLIBC_PRIVATE
+      2    0.0%    0.1%  __errno_location
+      2    0.0%    0.1%  __clock_gettime@@GLIBC_PRIVATE
+      2    0.0%    0.1%  __GI___pthread_rwlock_wrlock
+      2    0.0%    0.1%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.1%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
+      1    0.0%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.1%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  shutdown@@GLIBC_2.2.5
+      1    0.0%    0.1%  fputc@@GLIBC_2.2.5
+      1    0.0%    0.1%  calloc@@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_rwlock_tryrdlock
+      1    0.0%    0.1%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+    584    7.3%   39.5%  JavaScript
+    882   11.0%   59.7%  C++
+    878   10.9%   59.4%  GC
+   6559   81.6%          Shared libraries
+     11    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    102   32.4%    1.3%  __write@@GLIBC_2.2.5
+     52   16.5%    0.6%  fwrite@@GLIBC_2.2.5
+     35   11.1%    0.4%  __libc_write
+     25    7.9%    0.3%  syscall@@GLIBC_2.2.5
+     17    5.4%    0.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     11    3.5%    0.1%  _IO_file_xsputn@@GLIBC_2.2.5
+     10    3.2%    0.1%  __libc_malloc@@GLIBC_2.2.5
+      7    2.2%    0.1%  cfree@GLIBC_2.2.5
+      7    2.2%    0.1%  __mprotect@@GLIBC_PRIVATE
+      6    1.9%    0.1%  std::ostream::sentry::~sentry()@@GLIBCXX_3.4
+      5    1.6%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      5    1.6%    0.1%  __libc_read
+      4    1.3%    0.0%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      3    1.0%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      3    1.0%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.6%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.6%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      2    0.6%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    0.6%    0.0%  __pthread_mutex_unlock_usercnt
+      2    0.6%    0.0%  __clock_gettime@@GLIBC_PRIVATE
+      2    0.6%    0.0%  __GI___pthread_rwlock_wrlock
+      2    0.6%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.3%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.3%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.3%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.3%    0.0%  fflush@@GLIBC_2.2.5
+      1    0.3%    0.0%  calloc@@GLIBC_2.2.5
+      1    0.3%    0.0%  __pthread_rwlock_tryrdlock
+      1    0.3%    0.0%  __lll_lock_wait
+      1    0.3%    0.0%  __errno_location
+      1    0.3%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   6404   79.7%  /usr/bin/node
+   3372   52.7%    /usr/bin/node
+   1097   32.5%      Function: ^compileFunction node:vm:308:25
+    732   66.7%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    732  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+    715   97.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     17    2.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    360   32.8%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+    360  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    220   61.1%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+    140   38.9%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+    133    3.9%      /usr/bin/node
+     10    7.5%        Function: ^asString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/date-format/lib/index.js:33:18
+     10  100.0%          Function: ^timestampLevelAndCategory /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/layouts.js:40:35
+     10  100.0%            Function: ^colouredLayout /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/layouts.js:69:24
+      8    6.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      7   87.5%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      5   71.4%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      2   28.6%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1   12.5%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      6    4.5%        Function: ^compileFunction node:vm:308:25
+      3   50.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      3  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      3   50.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      6    4.5%        /usr/bin/node
+      3   50.0%          LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2   33.3%          Function: ^isValid /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/read_preference.js:130:19
+      2  100.0%            Function: ^isValid /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/read_preference.js:146:12
+      1   16.7%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      1  100.0%            LazyCompile: ~set /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      5    3.8%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      5    3.8%        Function: ^FastBuffer node:internal/buffer:958:14
+      3   60.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2   66.7%            Function: ^allocate node:buffer:397:18
+      1   33.3%            Function: ^allocUnsafeSlow node:buffer:382:50
+      2   40.0%          Function: ^alloc node:buffer:359:30
+      2  100.0%            Function: ^serialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/bson.js:111:19
+      4    3.0%        Function: ^databaseNamespace /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:514:27
+      4  100.0%          Function: ^Msg /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:468:16
+      2   50.0%            LazyCompile: *command /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:161:12
+      2   50.0%            Function: ^command /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:161:12
+      4    3.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      4  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    2.3%        LazyCompile: *quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      3  100.0%          Function: ^pushSource /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      2   66.7%            Function: ^appendEscaped /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1   33.3%            Function: ^compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      3    2.3%        LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      3  100.0%          LazyCompile: *parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      3  100.0%            Function: ^parseWithoutProcessing /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      3    2.3%        LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      3  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3    2.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    2.3%        LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      3  100.0%          Function: ^set /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      3  100.0%            Function: ^save /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/session/session.js:71:54
+      3    2.3%        Function: ^pipe /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:510:43
+      3  100.0%          Function: ^serveStatic /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/serve-static/index.js:72:31
+      3  100.0%            LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      3    2.3%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      3  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      3  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      3    2.3%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      3  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    1.5%        LazyCompile: ~isIPv6 node:internal/net:35:16
+      2  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1   50.0%            LazyCompile: ~lookupAndConnect node:net:995:26
+      1   50.0%            LazyCompile: ~lookup node:dns:97:16
+      2    1.5%        LazyCompile: *pushSource /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      2  100.0%          Function: ^append /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2  100.0%            LazyCompile: *compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2    1.5%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2    1.5%        Function: ^quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1   50.0%          Function: ^quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:998:38
+      1  100.0%            Function: ^setupParams /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      1   50.0%          Function: ^pushSource /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%            Function: ^appendEscaped /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      2    1.5%        Function: ^fromString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:454:22
+      2  100.0%          Function: ^ns /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:432:12
+      2  100.0%            Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:445:46
+      2    1.5%        Function: ^escapeExpression /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/utils.js:77:26
+      2  100.0%          Function: ^<anonymous> :1:20
+      2  100.0%            Function: ^main /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:207:18
+     79    2.3%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     64   81.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     11   17.2%          Function: ~<anonymous> node:crypto:1:1
+     11  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9   14.1%          Function: ~<anonymous> node:internal/child_process:1:1
+      9  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    9.4%          Function: ~<anonymous> node:tls:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    9.4%          Function: ~<anonymous> node:http:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    6.3%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    6.3%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.7%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      3  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    3.1%          LazyCompile: ~get node:dns:334:8
+      2  100.0%            /usr/bin/node
+      2    3.1%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.1%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.1%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.1%          Function: ~<anonymous> node:assert:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          LazyCompile: ~lazyLoadStreams node:fs:2841:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:2984:17
+      1    1.6%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:421:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    1.6%          LazyCompile: ~get BlockList node:net:1779:16
+      1  100.0%            /usr/bin/node
+      1    1.6%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:net:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     12   15.2%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     12  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     12  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    3.8%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2   66.7%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1   33.3%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     73    2.2%      Function: ^writevGeneric node:internal/stream_base_commons:126:23
+     73  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+     73  100.0%          Function: ^Socket._writev node:net:801:36
+     73  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+     67    2.0%      Function: ^memoryUsage node:internal/process/per_thread:165:23
+     67  100.0%        Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/webserver/webserver.js:173:26
+     67  100.0%          Function: ^handle /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/layer.js:86:49
+     67  100.0%            Function: ^next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/route.js:114:16
+     53    1.6%      LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     53  100.0%        LazyCompile: *parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     35   66.0%          Function: ^parseWithoutProcessing /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     35  100.0%            Function: ^parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+     18   34.0%          LazyCompile: *render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+     18  100.0%            /usr/bin/node
+     39    1.2%      Function: ^getOptions node:internal/fs/utils:314:20
+     25   64.1%        Function: ^readFileSync node:fs:450:22
+     25  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     19   76.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      5   20.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1    4.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     13   33.3%        Function: ^readFile node:fs:373:18
+     13  100.0%          Function: ^go$readFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:117:26
+     13  100.0%            Function: ^readFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:111:21
+      1    2.6%        LazyCompile: ~readFile node:fs:373:18
+      1  100.0%          LazyCompile: ~go$readFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:117:26
+      1  100.0%            LazyCompile: ~readFile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:111:21
+
+    380    4.7%  epoll_pwait@@GLIBC_2.6
+
+    138    1.7%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     90   65.2%    /usr/bin/node
+     28   31.1%      /usr/bin/node
+      7   25.0%        LazyCompile: *quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      5   71.4%          Function: ^pushSource /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      4   80.0%            Function: ^append /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1   20.0%            Function: ^appendEscaped /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      2   28.6%          Function: ^quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:998:38
+      2  100.0%            Function: ^setupParams /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      5   17.9%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      4   80.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      4  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   20.0%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3   10.7%        Function: ^FastBuffer node:internal/buffer:958:14
+      3  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1   33.3%            Function: ^createPool node:buffer:150:20
+      1   33.3%            Function: ^allocate node:buffer:397:18
+      1   33.3%            Function: ^allocUnsafeSlow node:buffer:382:50
+      3   10.7%        /usr/bin/node
+      2   66.7%          LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      2  100.0%            Function: ^set /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      1   33.3%          Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      1  100.0%            Function: ^set /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      2    7.1%        LazyCompile: *parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1   50.0%          LazyCompile: *render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1  100.0%            /usr/bin/node
+      1   50.0%          Function: ^parseWithoutProcessing /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%            Function: ^parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1    3.6%        LazyCompile: ~broadcast /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/socket.io-adapter/dist/index.js:99:14
+      1  100.0%          LazyCompile: ~emit /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/socket.io/dist/broadcast-operator.js:96:9
+      1  100.0%            LazyCompile: ~emit /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/socket.io/dist/namespace.js:169:9
+      1    3.6%        Function: ^quotedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1  100.0%          Function: ^pushSource /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%            Function: ^compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    3.6%        Function: ^prepareMustache /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:99:25
+      1  100.0%          LazyCompile: *anonymous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      1  100.0%            LazyCompile: *parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    3.6%        Function: ^pipe /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:510:43
+      1  100.0%          Function: ^serveStatic /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/serve-static/index.js:72:31
+      1  100.0%            LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      1    3.6%        Function: ^_renderTemplate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:260:18
+      1  100.0%          Function: ^render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1  100.0%            /usr/bin/node
+      1    3.6%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.6%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      1  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      5    5.6%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      3   60.0%        Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   40.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    3.3%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:11:25
+      3  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      3    3.3%      LazyCompile: *FastBuffer node:internal/buffer:958:14
+      2   66.7%        Function: ^alloc node:buffer:359:30
+      2  100.0%          Function: ^serialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/bson.js:111:19
+      2  100.0%            Function: ^serializeBson /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1   33.3%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%          Function: ^createPool node:buffer:150:20
+      1  100.0%            Function: ^fromStringFast node:buffer:412:24
+      2    2.2%      LazyCompile: *resolve node:path:1091:10
+      1   50.0%        LazyCompile: *render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1  100.0%          LazyCompile: *renderView /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1  100.0%            /usr/bin/node
+      1   50.0%        Function: ^SendStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:96:21
+      1  100.0%          Function: ^send /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:83:15
+      1  100.0%            Function: ^serveStatic /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/serve-static/index.js:72:31
+      2    2.2%      LazyCompile: *realpathSync node:fs:2408:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2    2.2%      Function: ^serializeBinary /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:459:25
+      2  100.0%        LazyCompile: *serializeInto /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:550:23
+      2  100.0%          LazyCompile: *serializeInto /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/serializer.js:550:23
+      2  100.0%            Function: ^serialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/bson.js:111:19
+      2    2.2%      Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      2  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.1%      LazyCompile: ~spawnSync node:child_process:768:19
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/detect-libc/lib/detect-libc.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~set /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:352:23
+      1  100.0%        LazyCompile: ~defaultConfiguration /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:70:57
+      1  100.0%          LazyCompile: ~init /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:57:25
+      1  100.0%            LazyCompile: ~createApplication /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/express.js:37:27
+      1    1.1%      LazyCompile: ~release /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sessions.js:594:12
+      1  100.0%        Function: ^completeEndSession /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sessions.js:138:40
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sessions.js:133:52
+      1  100.0%            Function: ^maybePromise /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:482:22
+      1    1.1%      LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          LazyCompile: ~shouldUseESMLoader node:internal/modules/run_main:26:28
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    1.1%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1  100.0%        LazyCompile: ~messageHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            Function: ^processIncomingData /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    1.1%      LazyCompile: ~module.exports.evaluate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/node-pre-gyp/lib/util/versioning.js:277:35
+      1  100.0%        LazyCompile: ~exports.find /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/node-pre-gyp/lib/pre-binding.js:16:24
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sqlite3/lib/sqlite3-binding.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~get serviceId /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:81:18
+      1  100.0%        LazyCompile: ~connectionIsStale /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:343:27
+      1  100.0%          LazyCompile: ~processWaitQueue /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~get /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/index.js:42:80
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/drivers/node-mongodb-native/decimal128.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~generate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:363:22
+      1  100.0%        LazyCompile: ~session /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:179:26
+      1  100.0%          LazyCompile: ~handle /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:288:23
+      1    1.1%      LazyCompile: ~formatValue node:internal/util/inspect:726:21
+      1  100.0%        LazyCompile: ~inspect node:internal/util/inspect:286:17
+      1  100.0%          LazyCompile: ~createAppender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/index.js:60:24
+      1  100.0%            LazyCompile: ~getAppender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/index.js:46:21
+      1    1.1%      LazyCompile: ~error /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/serve-static/index.js:115:39
+      1  100.0%        Function: ^emit node:events:340:44
+      1  100.0%          LazyCompile: ~error /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:267:45
+      1  100.0%            LazyCompile: ~onStatError /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:416:57
+      1    1.1%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:133:19
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~connect /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:189:12
+      1  100.0%        LazyCompile: ~createTopology /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/connect.js:53:24
+      1  100.0%          LazyCompile: ~connect /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/connect.js:17:17
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/mongo_client.js:126:52
+      1    1.1%      LazyCompile: ~compileChildren /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1  100.0%        Function: ^compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.1%      LazyCompile: ~cleanupCursor /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:512:23
+      1  100.0%        Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:445:46
+      1  100.0%          Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/find_cursor.js:54:81
+      1  100.0%            Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:494:13
+      1    1.1%      LazyCompile: ~afterWriteTick node:internal/streams/writable:482:24
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~_copy node:buffer:200:15
+      1  100.0%        Function: ^copy node:buffer:774:16
+      1  100.0%          Function: ^deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            Function: ^deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    1.1%      LazyCompile: ~Topology /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:58:16
+      1  100.0%        LazyCompile: ~createTopology /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/connect.js:53:24
+      1  100.0%          LazyCompile: ~connect /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/connect.js:17:17
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/mongo_client.js:126:52
+      1    1.1%      LazyCompile: ~SourceNode_prepend /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/source-map/lib/source-node.js:197:59
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:274:31
+      1  100.0%          Function: ^each /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:91:22
+      1  100.0%            LazyCompile: ~mergeSource /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      1    1.1%      LazyCompile: ~ServerResponse node:_http_server:178:24
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.1%      LazyCompile: ~RollingFileWriteStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/streamroller/lib/RollingFileWriteStream.js:31:14
+      1  100.0%        LazyCompile: ~RollingFileStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1  100.0%          LazyCompile: ~openTheStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/file.js:8:23
+      1  100.0%            LazyCompile: ~fileAppender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/file.js:38:22
+      1    1.1%      LazyCompile: ~RollingFileStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1  100.0%        LazyCompile: ~openTheStream /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/file.js:8:23
+      1  100.0%          LazyCompile: ~fileAppender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/file.js:38:22
+      1  100.0%            LazyCompile: ~configure /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/file.js:91:19
+      1    1.1%      LazyCompile: ~PathExpression /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1  100.0%        Function: ^accept /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      1  100.0%          LazyCompile: ~simpleSexpr /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:264:36
+      1  100.0%            LazyCompile: ~SubExpression /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:236:40
+      1    1.1%      LazyCompile: ~Layer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%        LazyCompile: ~use /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:428:25
+      1  100.0%          LazyCompile: ~lazyrouter /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:137:37
+      1  100.0%            LazyCompile: ~use /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:187:23
+      1    1.1%      LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/configuration.js:46:21
+      1  100.0%        /usr/bin/node
+      1  100.0%          LazyCompile: ~configure /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/configuration.js:37:19
+      1  100.0%            LazyCompile: ~configure /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/log4js.js:58:19
+      1    1.1%      LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/defaults.js:33:33
+      1  100.0%        LazyCompile: ~apply /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/_apply.js:11:15
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/_overRest.js:17:18
+      1  100.0%            LazyCompile: ~getPoolSettings /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/knex/lib/client.js:200:18
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ^writeHead node:_http_server:269:19
+      1  100.0%        Function: ^writeHead /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/on-headers/index.js:28:29
+      1  100.0%          Function: ^_implicitHeader node:_http_server:264:68
+      1  100.0%            Function: ^writetop /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:270:24
+      1    1.1%      Function: ^update node:internal/crypto/hash:95:40
+      1  100.0%        Function: ^sha1 /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/cookie-signature/index.js:49:14
+      1  100.0%          Function: ^exports.unsign /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/cookie-signature/index.js:36:26
+      1  100.0%            Function: ^unsigncookie /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:675:22
+      1    1.1%      Function: ^selectServer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:286:17
+      1  100.0%        Function: ^executeWithServerSelection /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/execute_operation.js:66:36
+      1  100.0%          Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/execute_operation.js:17:48
+      1  100.0%            LazyCompile: *<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      1    1.1%      Function: ^resolvePossibleLambda /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:527:56
+      1  100.0%        Function: ^compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.1%      Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.1%      Function: ^deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        Function: ^deserialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          Function: ^deserialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            Function: ^parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    1.1%      Function: ^deserialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        Function: ^deserialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/bson.js:162:21
+      1  100.0%          Function: ^parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1  100.0%            Function: ^messageHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    1.1%      Function: ^decode /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:987:17
+      1  100.0%        Function: ^pipe /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/send/index.js:510:43
+      1  100.0%          Function: ^serveStatic /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/serve-static/index.js:72:31
+      1  100.0%            LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      1    1.1%      Function: ^StatsBase.isFile node:internal/fs/utils:418:38
+      1  100.0%        Function: ^resolve /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/view.js:146:42
+      1  100.0%          Function: ^lookup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/view.js:104:40
+      1  100.0%            Function: ^View /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/view.js:52:14
+      1    1.1%      Function: ^Readable.on node:internal/streams/readable:875:33
+      1  100.0%        LazyCompile: ~connectionListenerInternal node:_http_server:442:36
+      1  100.0%          Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:445:36
+      1  100.0%            LazyCompile: ~connectionListener node:_http_server:436:28
+      1    1.1%      Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%        Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/faker/lib/locales.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.1%      Function: ^Glob /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/glob/glob.js:117:15
+      1  100.0%        Function: ^glob /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/glob/glob.js:62:15
+      1  100.0%          Function: ^<anonymous> node:internal/util:346:24
+      1  100.0%            /usr/bin/node
+      1    1.1%      Function: ^<anonymous> node:internal/validators:235:42
+      1  100.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      Function: ^<anonymous> :1:20
+      1  100.0%        Function: ^main /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:207:18
+      1  100.0%          Function: ^ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1  100.0%            Function: ^ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     10    7.2%    LazyCompile: *compileFunction node:vm:308:25
+     10  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     10  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+     10  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      9   90.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1   10.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+
+    133    1.7%  __write@@GLIBC_2.2.5
+     92   69.2%    /usr/bin/node
+     12   13.0%      /usr/bin/node
+      2   16.7%        LazyCompile: ~next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      2  100.0%          LazyCompile: ~lex /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      2  100.0%            LazyCompile: ~lex /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      1    8.3%        LazyCompile: ~setup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/node_modules/debug/src/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    8.3%        LazyCompile: ~resolveShort /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:384:23
+      1  100.0%          LazyCompile: ~parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:242:16
+      1  100.0%            LazyCompile: ~nopt /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:26:15
+      1    8.3%        LazyCompile: ~match /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          Function: ^matchLayer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:572:20
+      1  100.0%            LazyCompile: ~next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      1    8.3%        LazyCompile: ~fn node:internal/util:345:14
+      1  100.0%          LazyCompile: ~_getDir /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:266:16
+      1  100.0%            LazyCompile: ~getTemplates /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:135:21
+      1    8.3%        LazyCompile: ~configure /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/configuration.js:37:19
+      1  100.0%          LazyCompile: ~configure /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/log4js.js:58:19
+      1  100.0%            LazyCompile: ~StartServer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:23:21
+      1    8.3%        LazyCompile: ~addLevels /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/levels.js:45:19
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/levels.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    8.3%        LazyCompile: ~StateMachine.ctor /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/statemachine.js:34:29
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/internal.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    8.3%        LazyCompile: ~Kareem.filter /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/kareem/index.js:324:35
+      1  100.0%          LazyCompile: ~applyHooks /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/helpers/model/applyHooks.js:32:20
+      1  100.0%            LazyCompile: ~compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/model.js:4748:33
+      1    8.3%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:73:85
+      1  100.0%          LazyCompile: ~messageHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    8.3%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/_baseIsNative.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      3    3.3%      LazyCompile: ~StartServer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:23:21
+      3  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:1:1
+      3  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2    2.2%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:11:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      2    2.2%      LazyCompile: *onwrite node:internal/streams/writable:425:17
+      1   50.0%        LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%          LazyCompile: *_write node:internal/streams/writable:283:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+      1   50.0%        LazyCompile: *processIncomingData /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%            LazyCompile: *_write node:internal/streams/writable:283:16
+      1    1.1%      LazyCompile: ~writeGeneric node:internal/stream_base_commons:151:22
+      1  100.0%        LazyCompile: ~Socket._writeGeneric node:net:769:42
+      1  100.0%          LazyCompile: ~Socket._write node:net:806:35
+      1  100.0%            LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1    1.1%      LazyCompile: ~wrapfunction /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/depd/index.js:397:23
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/body-parser/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~visit /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/normalizr/dist/normalizr.js:472:27
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/normalizr/dist/normalizr.js:363:30
+      1  100.0%          /usr/bin/node
+      1  100.0%            LazyCompile: ~normalize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/normalizr/dist/normalizr.js:358:35
+      1    1.1%      LazyCompile: ~validate_config /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%        LazyCompile: ~exports.find /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~update /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology_description.js:142:11
+      1  100.0%        Function: ^serverUpdateHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:384:24
+      1  100.0%          Function: ^<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:560:53
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.1%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:141:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1  100.0%        LazyCompile: ~ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1  100.0%          LazyCompile: ~_renderTemplate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:260:18
+      1  100.0%            LazyCompile: ~render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1    1.1%      LazyCompile: ~resetQueue /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:364:21
+      1  100.0%        LazyCompile: ~closeSync /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/graceful-fs/graceful-fs.js:72:24
+      1  100.0%          Function: ^readFileSync node:fs:450:22
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/view.js:133:40
+      1  100.0%        LazyCompile: ~tryRender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:638:19
+      1  100.0%          LazyCompile: ~render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:531:29
+      1  100.0%            LazyCompile: ~render /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/response.js:989:29
+      1    1.1%      LazyCompile: ~readFileAfterClose node:internal/fs/read_file_context:46:28
+      1    1.1%      LazyCompile: ~query /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%        LazyCompile: ~handle /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:275:64
+      1    1.1%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~parseUrlencoded /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/whatwg-url/lib/urlencoded.js:10:25
+      1  100.0%        LazyCompile: ~parseUrlencodedString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/whatwg-url/lib/urlencoded.js:41:31
+      1  100.0%          LazyCompile: ~URLSearchParamsImpl /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/whatwg-url/lib/URLSearchParams-impl.js:5:14
+      1  100.0%            LazyCompile: ~exports.setup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/whatwg-url/lib/URLSearchParams.js:62:17
+      1    1.1%      LazyCompile: ~parse node:url:168:37
+      1  100.0%        LazyCompile: ~urlParse node:url:152:18
+      1  100.0%          LazyCompile: ~urlResolve node:url:668:20
+      1  100.0%            LazyCompile: ~module.exports.evaluate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:277:35
+      1    1.1%      LazyCompile: ~parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/utils.js:250:41
+      1  100.0%          LazyCompile: ~send /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: ~done /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/response.js:1006:27
+      1    1.1%      LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:631:31
+      1  100.0%        Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.1%      LazyCompile: ~onHeaders /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/on-headers/index.js:56:20
+      1  100.0%        Function: ^session /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:179:26
+      1  100.0%          Function: ^handle /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:288:23
+      1    1.1%      LazyCompile: ~onDestroy node:internal/streams/destroy:73:21
+      1  100.0%        Function: ^onError node:_http_incoming:374:17
+      1  100.0%          LazyCompile: ~_destroy node:_http_incoming:176:55
+      1  100.0%            LazyCompile: ~_destroy node:internal/streams/destroy:70:18
+      1    1.1%      LazyCompile: ~normalize node:path:1127:12
+      1  100.0%        Function: ^join node:path:1166:7
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sqlite3/lib/sqlite3-binding.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~module.exports.evaluate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/node-pre-gyp/lib/util/versioning.js:277:35
+      1  100.0%        LazyCompile: ~exports.find /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/node-pre-gyp/lib/pre-binding.js:16:24
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sqlite3/lib/sqlite3-binding.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~module.exports /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/gauge/theme-set.js:4:27
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/gauge/themes.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~logger node:internal/util/debuglog:96:18
+      1  100.0%        LazyCompile: ~Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1    1.1%      LazyCompile: ~lazyrouter /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:137:37
+      1  100.0%        LazyCompile: ~use /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:187:23
+      1  100.0%          LazyCompile: ~StartServer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:23:21
+      1  100.0%            Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:1:1
+      1    1.1%      LazyCompile: ~keys /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/keys.js:33:14
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/_createBaseFor.js:9:18
+      1  100.0%          LazyCompile: ~baseForOwn /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/_baseForOwn.js:12:20
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/lodash/_createBaseEach.js:12:18
+      1    1.1%      LazyCompile: ~immediate /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/helpers/immediate.js:12:36
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/connection.js:566:34
+      1  100.0%          LazyCompile: ~promiseOrCallback /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/connection.js:558:18
+      1    1.1%      LazyCompile: ~hasSessionSupport /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/topology.js:350:22
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/execute_operation.js:17:48
+      1  100.0%          LazyCompile: ~maybePromise /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:482:22
+      1  100.0%            LazyCompile: ~executeOperation /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/operations/execute_operation.js:12:26
+      1    1.1%      LazyCompile: ~generateList /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      1  100.0%        LazyCompile: ~functionCall /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:113:38
+      1  100.0%          LazyCompile: ~invokeAmbiguous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%            Function: ^compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    1.1%      LazyCompile: ~fromStringFast node:buffer:412:24
+      1  100.0%        LazyCompile: ~fromString node:buffer:431:20
+      1  100.0%          LazyCompile: ~from node:buffer:295:28
+      1  100.0%            Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1    1.1%      LazyCompile: ~forEach /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/axios/lib/utils.js:230:17
+      1  100.0%        LazyCompile: ~extend /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/axios/lib/utils.js:302:16
+      1  100.0%          LazyCompile: ~createInstance /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/axios/lib/axios.js:15:24
+      1  100.0%            Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/axios/lib/axios.js:1:1
+      1    1.1%      LazyCompile: ~findOne /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/collection.js:219:12
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:203:10
+      1  100.0%          /usr/bin/node
+      1  100.0%            /usr/bin/node
+      1    1.1%      LazyCompile: ~finalhandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/finalhandler/index.js:77:23
+      1  100.0%        Function: ^handle /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/application.js:158:29
+      1  100.0%          Function: ^app /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/express.js:38:21
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/engine.io/build/server.js:446:30
+      1    1.1%      LazyCompile: ~enable /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/engine.io/node_modules/debug/src/common.js:162:17
+      1  100.0%        LazyCompile: ~setup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/engine.io/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/engine.io/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~emit /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/socket.io/dist/namespace.js:169:9
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/webserver/webserver.js:222:53
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/services/msgdb.js:28:20
+      1  100.0%            LazyCompile: ~listOnTimeout node:internal/timers:505:25
+      1    1.1%      LazyCompile: ~done /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/response.js:1006:27
+      1  100.0%        LazyCompile: ~renderView /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1  100.0%          /usr/bin/node
+      1    1.1%      LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:445:36
+      1  100.0%        LazyCompile: ~emitLookup node:net:1052:46
+      1  100.0%          LazyCompile: ~onlookup node:dns:69:18
+      1    1.1%      LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%        LazyCompile: ~entitytag /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/etag/index.js:39:20
+      1  100.0%          LazyCompile: ~etag /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/etag/index.js:70:15
+      1  100.0%            LazyCompile: ~generateETag /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/utils.js:275:32
+      1    1.1%      LazyCompile: ~createDebug /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/node_modules/debug/src/common.js:60:22
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/categories.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~createApplication /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/express.js:37:27
+      1  100.0%        LazyCompile: ~StartServer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:23:21
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~createAppender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/index.js:60:24
+      1  100.0%        LazyCompile: ~getAppender /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/index.js:46:21
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/log4js/lib/appenders/index.js:96:41
+      1  100.0%            /usr/bin/node
+      1    1.1%      LazyCompile: ~command /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1  100.0%        LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:63:43
+      1  100.0%          LazyCompile: ~prepareHandshakeDocument /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:128:34
+      1  100.0%            LazyCompile: ~performInitialHandshake /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:47:33
+      1    1.1%      LazyCompile: ~checkInt node:internal/buffer:58:18
+      1  100.0%        LazyCompile: ~writeU_Int32LE node:internal/buffer:690:24
+      1  100.0%          LazyCompile: ~writeInt32LE node:internal/buffer:860:22
+      1  100.0%            LazyCompile: ~toBin /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1    1.1%      LazyCompile: ~calculateDurationInMs /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:714:31
+      1  100.0%        LazyCompile: ~measureAndReschedule /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/monitor.js:287:34
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/monitor.js:310:83
+      1  100.0%            Function: ^messageHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    1.1%      LazyCompile: ~assertUninitialized /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:560:29
+      1  100.0%        LazyCompile: ~batchSize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:359:14
+      1  100.0%          LazyCompile: ~findOne /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/collection.js:219:12
+      1  100.0%            LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:203:10
+      1    1.1%      LazyCompile: ~allocUnsafe node:buffer:372:42
+      1  100.0%        LazyCompile: ~tryCreateBuffer node:fs:414:25
+      1  100.0%          LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~_onceWrap node:events:514:19
+      1  100.0%        LazyCompile: ~once node:events:528:44
+      1  100.0%          LazyCompile: ~makeConnection /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%            LazyCompile: ~connect /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1    1.1%      LazyCompile: ~_initialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/find_cursor.js:48:16
+      1  100.0%        LazyCompile: ~next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:431:14
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cursor/abstract_cursor.js:173:52
+      1  100.0%            Function: ^maybePromise /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:482:22
+      1    1.1%      LazyCompile: ~_defineProperties /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/readable-stream/lib/internal/streams/buffer_list.js:11:27
+      1  100.0%        LazyCompile: ~_createClass /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/readable-stream/lib/internal/streams/buffer_list.js:13:22
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/readable-stream/lib/internal/streams/buffer_list.js:29:10
+      1  100.0%            Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/readable-stream/lib/internal/streams/buffer_list.js:1:1
+      1    1.1%      LazyCompile: ~MongoStore /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%        LazyCompile: ~create /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%          LazyCompile: ~StartServer /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:23:21
+      1  100.0%            Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:1:1
+      1    1.1%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:997:36
+      1    1.1%      LazyCompile: ~Long.lessThanOrEqual /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:516:47
+      1  100.0%        Function: ^deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserializeObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            LazyCompile: ~deserialize /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/parser/deserializer.js:36:21
+      1    1.1%      LazyCompile: ~Long.isNegative /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:492:42
+      1  100.0%        LazyCompile: ~Long.compare /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:291:39
+      1  100.0%          LazyCompile: ~Long.comp /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:311:36
+      1  100.0%            LazyCompile: ~Long.greaterThanOrEqual /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:476:50
+      1    1.1%      LazyCompile: ~Image /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/faker/lib/image.js:9:22
+      1  100.0%        LazyCompile: ~Faker /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/faker/lib/index.js:24:16
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/faker/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~HostAddress /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:1011:16
+      1  100.0%        LazyCompile: ~fromString /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/utils.js:1062:22
+      1  100.0%          /usr/bin/node
+      1  100.0%            LazyCompile: ~parseOptions /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/connection_string.js:208:22
+      1    1.1%      LazyCompile: ~Faker /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/faker/lib/index.js:24:16
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/faker/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      LazyCompile: ~Document.$__setSchema /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/document.js:3256:43
+      1  100.0%        LazyCompile: ~compile /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/model.js:4748:33
+      1  100.0%          LazyCompile: ~Mongoose._model /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/index.js:525:37
+      1  100.0%            LazyCompile: ~Mongoose.model /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongoose/lib/index.js:461:36
+      1    1.1%      LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:363:44
+      1  100.0%        LazyCompile: ~callback /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:48:31
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connect.js:73:85
+      1  100.0%            LazyCompile: ~messageHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    1.1%      LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%        LazyCompile: ~handleOperationResult /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/sdam/server.js:322:42
+      1  100.0%          Function: ^messageHandler /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.1%      LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/fs-extra/lib/fs/index.js:49:25
+      1  100.0%        /usr/bin/node
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/fs-extra/lib/fs/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.1%      LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:70:28
+      1  100.0%        /usr/bin/node
+      1  100.0%          LazyCompile: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:58:38
+      1  100.0%            /usr/bin/node
+      1    1.1%      LazyCompile: *SourceLocation /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:32:24
+      1  100.0%        Function: ^yy.locInfo /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:42:25
+      1  100.0%          LazyCompile: *anonymous /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      1  100.0%            LazyCompile: *parse /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    1.1%      Function: ~<instance_members_initializer> node:internal/util/iterable_weak_map:17:3
+      1  100.0%        LazyCompile: ~IterableWeakMap node:internal/util/iterable_weak_map:16:1
+      1  100.0%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.1%      Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sift/lib/index.js:135:54
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sift/lib/index.js:5:19
+      1  100.0%          Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sift/lib/index.js:1:11
+      1  100.0%            Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/sift/lib/index.js:1:1
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/npmlog/log.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/knex/lib/query/querybuilder.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars.runtime.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:44:36
+      1  100.0%        Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bson/lib/long.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/body-parser/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ~<anonymous> /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ^get /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/connect-mongo/build/main/lib/MongoStore.js:201:8
+      1  100.0%        Function: ^session /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express-session/index.js:179:26
+      1  100.0%          LazyCompile: *next /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            Function: ^myLogger /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/main.js:52:31
+      1    1.1%      Function: ^enabledHooksExist node:internal/async_hooks:464:27
+      1  100.0%        Function: ^popAsyncContext node:internal/async_hooks:543:25
+      1  100.0%          Function: ^emitAfterScript node:internal/async_hooks:507:25
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      Function: ^createNewLookupObject /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      1  100.0%        Function: ^createProtoAccessControl /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/internal/proto-access.js:19:34
+      1  100.0%          Function: ^ret._setup /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:217:25
+      1  100.0%            Function: ^ret /home/german/Estudio/Curso NodeJS/Entregas Obligatorias/Entrega 14/src/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1    1.1%      Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      1  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:151:22
+      1  100.0%          Function: ^Socket._writeGeneric node:net:769:42
+      1  100.0%            Function: ^Socket._write node:net:806:35
+      8    6.0%    LazyCompile: *compileFunction node:vm:308:25
+      8  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      8  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      8  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      6   75.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2   25.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+

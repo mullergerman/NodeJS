@@ -1,0 +1,9 @@
+**/src/node_modules/**
+**/node_modules/**
+*.zip
+*.wt
+**/dbbkp/**
+**/Temporal/**
+*.env
+*.log
+*.png

@@ -1,0 +1,35 @@
+config:
+  target: "http://localhost:8080"
+  http:
+  # Responses have to be sent within 10 seconds, or an `ETIMEDOUT` error gets raised.
+  timeout: 15
+  phases:
+    - duration: 1
+      arrivalRate: 100
+  variables:
+    email:
+      - "[username_test]"
+
+scenarios:
+  # In this scenario, the request to /login will capture the user's
+  # email and set it in a cookie, which will get returned in the response.
+  # The subsequent request to /account will return the value of the
+  # email from the saved cookie.
+  - name: "Login and verify cookie"
+    flow:
+    - get:
+        url: "/login"
+    - post:
+        url: "/login"
+        json:
+          username: "[username_test]"
+          password: "[password_test]"
+        followRedirect: false
+    - think: 1
+    - get:
+        url: "/productos"
+    - think: 2
+    - get:
+        url: "/logout"
+    - think: 1
+ 

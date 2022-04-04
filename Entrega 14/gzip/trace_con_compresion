@@ -1,0 +1,100 @@
+GET /info_gzip HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Cache-Control: max-age=0
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+ETag: W/"abe-D6M1gWtoTBQyPMnqa7eUosHq+hY"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Set-Cookie: connect.sid=s%3A5CrRyLTrmE3troZ_22J2xhOzUxK3SCi_.Lt5P2NAaI8492LH6VAApYJBpFxxhpD1HqZQI%2B2sAH3I; Path=/; Expires=Fri, 14 Jan 2022 00:52:54 GMT; HttpOnly
+Date: Fri, 14 Jan 2022 00:51:54 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+a
+..........
+3f2
+.VmW.8.....t.ZB..g.3.8..gP...[h.m.Ij.........../........>.....\.n....Lz{...$LE]....#.......~.}r.O.0.....c.%..\/Da.....27..^uI1	]o..9..y$...B.g.]..0.!...>.J8....,.n... .Z;..K.`<^.O.z$..Y...K.GJC.j..C"....Q.J:]..:....ra.
+.]/..P5.x.@...[$`c..-.sd.[.8f.v.?k>.....F<ZL....pp."...v.t.y..E]\=.;....j.]>>].....E.$.......FDBu=..ZH..%w.....	L._.#.. .H..	....#..?a ~..)a.0.....M.^......s*.8.J..H}A.f..	9...
+.3.1.4.O..L..B.U...{...7.E...f.]..h.".X..l..../.xd..bBF...f.r..[...X2%f...2]	.
+.6...,M..2.x..H`..m*e.....-..<..-.v	..z..
+.... ..w....	.L5_...bN..Y$-7c......B..a.3a.../. .0/;C....?.fa....3......(...r.X...(.L.^._..HJ..z.JA..`2."..0..2.....kr.....?..*....R..F. ..h,.x..-C......	..R.&..#.mr.{'&.$&.-z..u.t.]o..}..d<.U.. F..X..v.xL.....Es...[0.<.[....Z..5....H..;2?>:8....-.......1.....Y.3}.YC.BQ.|./@......v.APo..........)....f...XK..`.*:...B.Af.&e!..mb..)Ff..ZK_.......S.0..g..F.v....._y.Zuh....{=ej..;[...QV..Bo.........Cu..f.\P.E8.l......IL9;L./.........<... ...h.a..l_...~||r....~.........~....A.T.....>..	f....
+..
+0
+
+GET /style.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://localhost:8080/info_gzip
+Cookie: connect.sid=s%3A5CrRyLTrmE3troZ_22J2xhOzUxK3SCi_.Lt5P2NAaI8492LH6VAApYJBpFxxhpD1HqZQI%2B2sAH3I
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Cache-Control: max-age=0
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Sat, 23 Oct 2021 01:35:39 GMT
+ETag: W/"1e4-17caaca0611"
+Content-Type: text/css; charset=UTF-8
+Content-Length: 484
+Date: Fri, 14 Jan 2022 00:51:54 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+.lds-dual-ring {
+    display:inline-flex;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #cef;
+    border-color: #cef transparent #cef transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }GET /android-icon-192x192.png HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://localhost:8080/info_gzip
+Cookie: connect.sid=s%3A5CrRyLTrmE3troZ_22J2xhOzUxK3SCi_.Lt5P2NAaI8492LH6VAApYJBpFxxhpD1HqZQI%2B2sAH3I
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Cache-Control: max-age=0
+

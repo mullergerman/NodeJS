@@ -1,0 +1,82 @@
+<div class="container">
+  <br>
+
+  <div class="row align-items-center border border-success rounded">
+    <div class="col-12">
+        <h2 style="text-align: center;">Informacion del Sistema</h2>
+
+        <table class="table mt-5">
+            <tr>
+                <th>Parametro</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr class="align-middle">
+                <td>Puerto escucha BackEnd</td>
+                <td>{{info.portBE}}</td>
+            </tr>
+
+            <tr class="align-middle">
+                <td>Puerto escucha FrontEnd</td>
+                <td>{{info.portFE}}</td>
+            </tr>
+
+            <tr class="align-middle">
+                <td>URL Database</td>
+                <td>{{info.database}}</td>
+            </tr>
+
+            <tr class="align-middle">
+                <td>Notificaciones Email</td>
+                <td>{{info.admin_email}}</td>
+            </tr>
+
+            <tr class="align-middle">
+                <td>Expiracion de Sesion</td>
+                <td>{{info.expire_time}}</td>
+            </tr>
+
+            <tr class="align-middle">
+                <td>Cantidad de instancias</td>
+                <td>{{info.instances}}</td>
+            </tr>
+
+            <tr class="align-middle">
+                <td>Argumentos</td>
+                <td>{{info.args}}</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Plataforma</td>
+                <td>{{info.platform}}</td>
+            </tr>
+            <tr class="align-middle">
+                <td>NodeJS Version</td>
+                <td>{{info.version}}</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Memoria</td>
+                <td>{{info.memUsage.rss}}</td>
+            </tr>  
+            <tr class="align-middle">
+                <td>Path Ejecucion</td>
+                <td>{{info.path}}</td>
+            </tr>  
+            <tr class="align-middle">
+                <td>Process ID</td>
+                <td>{{info.pid}}</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Working Directory</td>
+                <td>{{info.cwd}}</td>
+            </tr>
+            <tr class="align-middle">
+                <td>Cantidad CPUs</td>
+                <td>{{info.num_cpu}}</td>
+            </tr>
+        </table>
+
+    </div>
+    <span class="mt-2"></span>
+  </div>
+
+</div>
