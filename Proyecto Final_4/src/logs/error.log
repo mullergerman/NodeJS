@@ -1,0 +1,35 @@
+[2022-03-13T23:37:19.215] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+ReferenceError: access_token is not defined
+[2022-03-15T21:56:54.182] [ERROR] BackEnd - NotificacionesWap;Error al enviar Whatsapp
+Error: Authenticate
+[2022-03-15T21:56:55.220] [ERROR] BackEnd - NotificacionesSMS;Error al enviar SMS
+Error: Authenticate
+[2022-03-15T22:03:21.994] [ERROR] BackEnd - NotificacionesWap;Error al enviar Whatsapp
+Error: Authenticate
+[2022-03-15T22:03:22.914] [ERROR] BackEnd - NotificacionesSMS;Error al enviar SMS
+Error: Authenticate
+[2022-03-15T22:05:52.013] [ERROR] BackEnd - NotificacionesWap;Error al enviar Whatsapp
+Error: Authenticate
+[2022-03-15T22:05:53.036] [ERROR] BackEnd - NotificacionesSMS;Error al enviar SMS
+Error: Authenticate
+[2022-03-15T22:07:53.261] [ERROR] BackEnd - NotificacionesSMS;Error al enviar SMS
+Error: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.
+[2022-03-16T23:48:07.928] [ERROR] BackEnd - ApiProductosBO;remove;Imposible Eliminar Producto
+[2022-03-16T23:49:01.480] [ERROR] BackEnd - ApiProductosBO;remove;Imposible Eliminar Producto
+[2022-03-16T23:51:10.612] [ERROR] BackEnd - ApiProductosBO;get;Producto No Disponible
+[2022-03-16T23:51:10.613] [ERROR] BackEnd - ApiProductosBO;remove;Imposible Eliminar Producto
+[2022-03-16T23:53:01.511] [ERROR] BackEnd - ApiProductosBO;remove;Imposible Eliminar Producto
+[2022-03-16T23:57:11.578] [ERROR] BackEnd - ApiProductosBO;get;Producto No Disponible
+[2022-03-17T00:08:16.445] [ERROR] BackEnd - ApiProductosBO;insert;Producto Incorrecto
+[2022-04-03T09:12:07.368] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+Error: Request failed with status code 403
+[2022-04-03T09:14:35.447] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+Error: Request failed with status code 403
+[2022-04-03T09:16:20.911] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+Error: Request failed with status code 403
+[2022-04-03T09:22:01.504] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+Error: Request failed with status code 403
+[2022-04-03T09:24:29.659] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+Error: Request failed with status code 403
+[2022-04-03T09:31:10.994] [ERROR] FrontEnd - Business;Error en getUserCartInfo
+Error: Request failed with status code 403

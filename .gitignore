@@ -5,5 +5,5 @@
 **/dbbkp/**
 **/Temporal/**
 *.env
-*.log
+debug.log
 *.png
